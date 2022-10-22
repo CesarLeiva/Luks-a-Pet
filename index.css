@@ -1,0 +1,61 @@
+body{
+    background-image: url(/imagenes/Desktop\ -\ 3.jpg);
+}
+
+
+.sidebar{/*barra lateral*/
+    display: flex;
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    float: left;
+    background-color: #181A1C;
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    margin: 0 auto;
+}
+
+hr{
+    height: 2px;
+    background-color:#FF8298;
+}
+
+.nombrePagina{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sidebar ul.nav{
+    margin-bottom: auto;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/*cuerpo de la página*/
+div.cuerpo{
+    margin-left: 240px;
+}
+
+header nav{/*encabezado*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*texto de presentación*/
+section{
+    display: flex;
+}
+
+.content{
+    margin: 20px;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.content p{
+    font-size: 200%;
+    color: #EAFDFF;
+}
