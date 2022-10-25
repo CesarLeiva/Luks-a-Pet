@@ -1,18 +1,15 @@
-#boton{
-    width: 160px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: #FF8298;
-    border: 0;
-    margin: 15px;
-}
-
+/*inputs y botones*/
 .inputs{
     text-align: start;
 }
 
 .inputs label{
     color: #5F6C7B;
+    margin-left: 5px;
+}
+
+.inputs input::placeholder{
+    opacity: 0.5;
 }
 
 .inputs input{
@@ -23,9 +20,30 @@
     border-width: 2px;
 }
 
+#boton{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #FF8298;
+    border: 0;
+    margin: 15px;
+}
+
+#cerrarSesion #boton{
+    background: #5F6C7B;
+}
+
+li#feed a#boton{
+    width: 194px;
+}
+
 /*css para los links de 2 colores*/
 .link2colores a{
     text-decoration: none;
+}
+
+.link2colores a:hover{
+    color: white;
 }
 
 .link2colores #t1{

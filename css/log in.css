@@ -1,0 +1,21 @@
+body{
+    background-image: url(/imagenes/Desktop\ -\ 3.jpg);
+}
+
+/*imagenes de fondo*/
+#astronauta{
+    position: fixed;
+    margin-left: 5%;
+    margin-top: -30px;
+    width: 400px;
+}
+
+#perro{
+    width: 400px;
+    margin-left: 68%;
+    margin-top: 18%;
+}
+
+div.card{
+    background: #181A1C;
+}

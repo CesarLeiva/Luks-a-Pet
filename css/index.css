@@ -31,12 +31,12 @@ hr{
 .sidebar ul.nav{
     margin-bottom: auto;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 /*cuerpo de la página*/
 div.cuerpo{
-    margin-left: 240px;
+    margin-left: 230px;
 }
 
 header nav{/*encabezado*/
@@ -51,7 +51,7 @@ section{
 
 .content{
     margin: 20px;
-    margin-left: 15%;
+    margin-left: 5%;
     margin-right: 5%;
 }
 

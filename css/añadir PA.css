@@ -1,0 +1,52 @@
+body{
+    background-image: url(/imagenes/Sign\ up\ 1.jpg);
+    background-position: center;
+}
+
+.cuerpo{
+    color: #5F6C7B;
+    display: flex;
+    flex-direction: column;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.formulario{
+    display: flex;
+}
+
+form{
+    margin: 0 auto;
+    width: 400px;
+}
+
+#opcionesRadio{
+    height: 30px;
+}
+
+
+.descripcion input{
+    height: 200px;
+}
+
+.botones{
+    text-align: end;
+}
+
+#boton{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #FF8298;
+    border: 0;
+}
+
+.formulario .input{
+    border-radius: 10px;
+    border-color: #FF8298;
+    border-width: 2px;
+}

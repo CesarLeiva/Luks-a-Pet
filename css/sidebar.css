@@ -1,0 +1,55 @@
+.sidebar{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 230px;
+    height: 100%;
+    float: left;
+    background-color: #181A1C;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.sidebar .text{
+    color: white;
+}
+
+.sidebar section{
+    margin-bottom: 30%;
+}
+
+hr{
+    height: 2px;
+    background-color:#FF8298;
+}
+
+
+#boton-rosado{
+    width: 194px;
+    border-radius: 10px;
+    background-color: #FF8298;
+    margin: 15px;
+}
+
+#boton-gris{
+    width: 130px;
+    border-radius: 10px;
+    background-color: #5F6C7B;
+    margin: 15px;
+    margin: 0 auto;
+}
+
+ul{
+    flex-direction: column;
+}
+
+a.pqrs{
+    text-decoration: none;
+    color: #5F6C7B;
+    margin-bottom: 10px;
+}
+
+
+div.cuerpo{
+    margin-left: 230px;
+}

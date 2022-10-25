@@ -1,0 +1,26 @@
+body.signup{
+    background: url(/imagenes/Sign\ up\ 1.jpg);
+    background-position: center;
+}
+
+section{
+    width: 420px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.card{
+    border-radius: 20px;
+}
+
+#logo{
+    width: 150px;
+    margin: 0 auto;
+}
+
+div.content{
+    margin: 0 auto;
+    text-align: center;
+}

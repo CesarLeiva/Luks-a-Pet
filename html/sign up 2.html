@@ -7,45 +7,39 @@
     <title>LUKS A PET</title>
     <link rel="icon" href="/imagenes/icono de página.png">
     <!-- CSS only -->
-    <link rel="stylesheet" href="/log in.css">
-    <link rel="stylesheet" href="/inputs y botones.css">
+    <link rel="stylesheet" href="/css/card form.css">
+    <link rel="stylesheet" href="/css/inputs y botones.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-</head >
-
-<body>
-    <!-- intentar hacerlo animado como flotando en el espacio -->
-    <img src="/imagenes/astronauta.png" alt="astronauta" id="astronauta">
-    <img src="/imagenes/perro astronauta.png" alt="perro" id="perro">
+</head>
+<body class="signup">
     <section>
         <div class="card">
             <div class="content">
                 <img src="/imagenes/logo.png" alt="logo" id="logo">
-                <form>
+                <form action="/html/log in.html">
                     <div class="inputs">
                         <div class="input">
                             <label for="correo" class="form-label">Correo</label><br>
-                            <input type="email" class="form-control" placeholder="ejemplo@gmail.com">
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@gmail.com">
                         </div>
                         <br>
                         <div class="input" >
                             <label for="contraseña" class="form-label">Contraseña</label><br>
-                            <input type="password" class="form-control" placeholder="Contraseña">
+                            <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña">
+                        </div>
+                        <br>
+                        <div class="input" >
+                            <label for="contraseña" class="form-label">Repita la contraseña</label><br>
+                            <input type="password" class="form-control" id="repetirContraseña" name="repetirContraseña" placeholder="Contraseña">
                         </div>
                     </div>
                     <br>
-                    <button type="submit" id="boton" class="btn btn-primary">Iniciar sesión</button>
+                    <button type="submit" id="boton" class="btn btn-primary">Registrarse</button>
                     <br><br>
                 </form>
-                <div class="link2colores">
-                    <a href="sign up 1.html">
-                        <span id="t1">Aun no tienes cuenta?</span>
-                        <span id="t2">Regístrate aquí</span>
-                    </a>
-                </div>
             </div>
-            <br><br>
         </div>
     </section>
-</body>
 
+</body>
 </html>
