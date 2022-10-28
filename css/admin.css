@@ -1,0 +1,58 @@
+.historial{
+    background-color: #EAFDFF;
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cuerpo footer{
+    margin-left: 150px;
+    width: 900px;
+    height: 400px;
+}
+
+.containt a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.containt a:hover{
+    color: black;
+}
+
+a h1{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div .card{
+    background: #D9D9D9;
+    border-radius: 20px;
+}
+
+.card .containt{
+    color: white;
+    display: flex;
+}
+.card .boton{
+    background-color: #5F6C7B;
+    border: 2px;
+    border-radius: 10px;
+    height: 450px;
+    width: 100%;
+}
+
+.boton section{
+    margin: 15px;
+}
+

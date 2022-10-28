@@ -1,11 +1,10 @@
-body{
-    background-image: url(/imagenes/Desktop\ -\ 3.jpg);
+.historial{
+    background-color: #EAFDFF;
 }
 
 .cuerpo{
     display: flex;
     flex-direction: column;
-    color: white;
 }
 
 header .navbar{
@@ -14,7 +13,6 @@ header .navbar{
 }
 
 .cuerpo footer{
-    margin-top: 30px;
     margin-left: 150px;
     margin-right: 100px;
 }
@@ -30,6 +28,7 @@ div .card{
 }
 .card .pa{
     background-color: #5F6C7B;
+    border: 2px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -37,3 +36,4 @@ div .card{
 .pa section{
     margin: 15px;
 }
+
