@@ -19,35 +19,35 @@
         <div class="card">
             <div class="content">
                 <img src="/imagenes/logo.png" alt="logo" id="logo">
-                <form action="/html/sign up 2.html">
+                <form name="registro1" class="registro1" action="/html/sign up 2.html" method="get">
                     <div class="inputs">
                         <div class="input">
                             <label for="nombres" class="form-label">Nombres</label><br>
-                            <input type="text" class="form-control" id="nombre" name="nombres" placeholder="Nombres">
+                            <input type="text" class="form-control" id="nombre" name="nombres" placeholder="Nombres" required>
                         </div>
                         <br>
                         <div class="input">
                             <label for="apellidos" class="form-label">Apellidos</label><br>
-                            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos">
+                            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
                         </div>
                         <br>
                         <div class="input">
                             <label for="id" class="form-label">Número de identificación</label><br>
-                            <input type="number" class="form-control" id="identificacion" name="identificacion" placeholder="Número de identificación">
+                            <input type="number" class="form-control" id="identificacion" name="identificacion" placeholder="Número de identificación" required>
                         </div>
                         <br>
                         <div class="input">
                             <label for="celular" class="form-label">Número de celular</label><br>
-                            <input type="tel" class="form-control" id="celular" name="celular" pattern="[3]{1}[0-9]{9}" placeholder="3123456789">
+                            <input type="tel" class="form-control" id="celular" name="celular" pattern="[3]{1}[0-9]{9}" placeholder="3123456789" required>
                         </div>
                     </div>
                     <br>
-                    <button type="submit" id="boton" class="btn btn-primary">Registrarse</button>
+                    <button name="submit" type="submit" id="boton" class="btn btn-primary">Registrarse</button>
                     <br><br>
                 </form>
             </div>
         </div>
     </section>
-    
+    <script src="/scripts/registro1.js" type="text/JavaScript"></script>
 </body>
 </html>

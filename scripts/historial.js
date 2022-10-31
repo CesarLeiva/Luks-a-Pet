@@ -1,3 +1,5 @@
+//editar acorde a la interfaz de historial
+
 const propuesta1 = {
     nombre: 'Jack',
     edad: '2 años',

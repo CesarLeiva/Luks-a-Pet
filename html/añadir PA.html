@@ -51,23 +51,23 @@
         <footer>
             <div class="formulario">
                 
-                <form action="#">
+                <form name="añadirPA" class="añadirPA" action="#" method="get">
                     <hr class="mx-5">
                     <div class="inputs">
                         <section class="d-flex">
                             <div class="input" >
                                 <label for="nombreMascota" class="form-label">Nombre de la mascota</label><br>
-                                <input type="text" class="form-control input" id="nombreMascota" name="nombreMascota" placeholder="Nombre de la mascota">
+                                <input type="text" class="form-control input" id="nombreMascota" name="nombreMascota" placeholder="Nombre de la mascota"  required>
                             </div>
                             <div class="input mx-1">
                                 <label for="edadMascota" class="form-label">Edad de la mascota</label><br>
-                                <input type="text" class="form-control input" id="edadMascota" name="edadMascota" placeholder="Edad de la mascota">
+                                <input type="text" class="form-control input" id="edadMascota" name="edadMascota" placeholder="Edad de la mascota" required>
                             </div>
                             <div class="input">
                                 <label for="sexo" class="form-label">¿Qué es?</label>
                                 <select class="form-control input" name="sexoMascota" id="sexoMascota">
-                                    <option value="macho">Macho</option>
-                                    <option value="hembra">Hembra</option>
+                                    <option value="Macho">Macho</option>
+                                    <option value="Hembra">Hembra</option>
                                 </select>
                             </div>
                         </section>
@@ -78,21 +78,22 @@
                         
                         <br>
                         <div class="sitio d-flex">
+                            <!-- <div class="select">
+                                <script>
+                                    
+                                </script>
+                            </div> -->
                             <div class="select">
-                                <label for="departamentoMascota" class="form-label">Seleccione un departamento</label><br>
-                                <select class="form-control input" name="departamentoMascota" id="departamentoMascota">
-                                    <option value="">Departamento</option>
-                                </select>
+                                <label for="departamentoMascota" class="form-label">Departamento</label><br>
+                                <input type="text" class="form-control input" name="departamentoMascota" id="departamentoMascota" placeholder="Departamento" required>
                             </div>
-                            <div class="select mx-3">
-                                <label for="ciudadMascota" class="form-label">Seleccione una ciudad</label><br>
-                                <select class="form-control input" name="ciudadMascota" id="ciudadMascota">
-                                    <option value="">Ciudad</option>
-                                </select>
+                            <div class="select mx-2">
+                                <label for="ciudadMascota" class="form-label">Ciudad</label><br>
+                                <input type="text" class="form-control input" name="ciudadMascota" id="ciudadMascota" placeholder="Ciudad" required>
                             </div>
                             <div class="radio mx-1" >
                                 <label for="nombreMascota" class="form-label">¿Está esterilizado?</label><br>
-                                <div id="opcionesRadio" class=" mx-3 my-2">
+                                <div id="opcionesRadio" class=" mx-2 my-2">
                                     <input type="radio" value="si" id="siEsterilizado" name="esterilizado">
                                     <label for="nombreMascota" class="form-label">Sí</label>
                                     <input type="radio" value="no" id="noEsterilizado" name="esterilizado">
@@ -103,23 +104,23 @@
                         <br>
                         <div class="foto">
                             <label for="fotoMascota" class="form-label">Seleccione una foto de la mascota</label><br>
-                            <input type="file" class="form-control input"  id="fotoMascota" name="fotoMascota" accept="image/png, image/jpeg">
+                            <input type="file" class="form-control input"  id="fotoMascota" name="fotoMascota" accept="image/png, image/jpeg" required>
                         </div>
                         <br>
                         <div class="input descripcion">
                             <label for="descripcionMascota" class="form-label">Describe su personalidad</label>
-                            <textarea class="form-control  input" name="descripcionMascota" id="descripcionMascota" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
+                            <textarea class="form-control  input" name="descripcionMascota" id="descripcionMascota" cols="30" rows="10" placeholder="Escribe aquí" required></textarea>
                         </div>
                     </div>
                     <br>
                     <div class="botones">
-                        <button type="reset" id="boton" class="btn btn-primary mx-4">Cancelar</button>
-                        <button type="submit" id="boton" class="btn btn-primary">Publicar</button>
+                        <button name="submit" type="submit" id="boton" class="btn btn-primary">Publicar</button>
                     </div>
                 </form>
             </div>
         </footer>
 
     </div>
+    <script src="/scripts/añadir PA.js" type="text/JavaScript"></script>
 </body>
 </html>

@@ -21,16 +21,17 @@
         <div class="card">
             <div class="content">
                 <img src="/imagenes/logo.png" alt="logo" id="logo">
-                <form action="/html/feed.html">
+                <form name="login" class="login" action="/html/feed.html" method="get">
+                    <div id="msg"></div>
                     <div class="inputs">
                         <div class="input">
                             <label for="correo" class="form-label">Correo</label><br>
-                            <input type="email" class="form-control" placeholder="ejemplo@gmail.com">
+                            <input name="correo" type="email" class="form-control" placeholder="ejemplo@gmail.com" required>
                         </div>
                         <br>
                         <div class="input" >
                             <label for="contraseña" class="form-label">Contraseña</label><br>
-                            <input type="password" class="form-control" placeholder="Contraseña">
+                            <input name="contraseña" type="password" class="form-control" placeholder="Contraseña" required>
                         </div>
                     </div>
                     <br>
@@ -47,6 +48,7 @@
             <br><br>
         </div>
     </section>
+    <script src="/scripts/log in.js" type="text/JavaScript"></script>
 </body>
 
 </html>

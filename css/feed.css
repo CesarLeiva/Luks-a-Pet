@@ -23,6 +23,7 @@ header .navbar{
 div .card{
     background: #D9D9D9;
     border-radius: 20px;
+    width: 900px;
 }
 
 .card .containt{
@@ -36,4 +37,5 @@ div .card{
 
 .pa section{
     margin: 15px;
+    display: flex;
 }

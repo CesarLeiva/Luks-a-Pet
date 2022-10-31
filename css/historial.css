@@ -35,5 +35,6 @@ div .card{
 
 .pa section{
     margin: 15px;
+    display: flex;
 }
 
