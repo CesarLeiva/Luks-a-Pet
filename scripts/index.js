@@ -40,7 +40,7 @@ const propuestas = [propuesta1, propuesta2, propuesta3];
 for(i=0; i<=propuestas.length; i++){
     document.getElementById("card").innerHTML +=
         `<div class="containt">
-            <div class="pa mx-3" style="background-color: #5F6C7B; border: 2px; margin-bottom: 20px; border-radius: 10px;">
+            <div class="pa mx-3" style="background-color: #0067B0; border: 2px; margin-bottom: 20px; border-radius: 10px;">
                 <section style="margin-top: 10px;">
                     <div class="fotoMascota m-2" style="height: 200px; width: auto;">
                         <img src="/imagenes/image 5.jpg" alt="nombre" style="border-radius: 15px; height: inherit; width: inherit;">
