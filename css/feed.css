@@ -1,7 +1,9 @@
 body{
     background-image: url(/imagenes/Desktop\ -\ 3.jpg);
 }
-
+body::-webkit-scrollbar{
+    width: 0px;
+}
 .cuerpo{
     display: flex;
     flex-direction: column;

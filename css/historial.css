@@ -1,7 +1,9 @@
 .historial{
     background-color: #EAFDFF;
 }
-
+body::-webkit-scrollbar{
+    width: 0px;
+}
 .cuerpo{
     display: flex;
     flex-direction: column;

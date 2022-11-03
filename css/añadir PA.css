@@ -1,10 +1,12 @@
 body{
-    background-image: url(/imagenes/Sign\ up\ 1.jpg);
+    background-image: url(/imagenes/Sign\ up\ 5.svg);
     background-position: center;
 }
-
+h1{
+    color: #1E1E1E;
+}
 .cuerpo{
-    color: #5F6C7B;
+    color: white;
     display: flex;
     flex-direction: column;
 }
@@ -22,6 +24,8 @@ header .navbar{
 form{
     margin: 0 auto;
     width: 400px;
+    background: #1E1E1E;
+    border-radius: 20px;
 }
 
 #opcionesRadio{
