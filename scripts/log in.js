@@ -1,19 +1,44 @@
 var usuario = "cesarleacu@hotmail.com";
 var contraseña = "cesar";
 
+  
 document.querySelector('.login')
     .addEventListener('submit', e => {
         e.preventDefault()
-        const data = Object.fromEntries(
+        
+        const form = Object.fromEntries(
             new FormData(e.target)
         )
-        console.log(data.correo, data.contraseña)
-        if (data.correo == usuario && data.contraseña == contraseña){
-            console.log("todo correcto perro")
-            document.getElementById("msg").innerHTML = ""
+       
+        let payload = 
+        {
+            correo:form.correo,
+            contra:form.contraseña
         }
-        else {
-            e.preventDefault()
-            document.getElementById("msg").innerHTML = "El correo o contraseña son incorrectos";
-        }
+    
+        fetch("http://localhost:3001/login",
+        {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        })
+        .then(function(res){ return res.json(); })
+        .then(function(data){ 
+            console.log(data);
+            if(data.message){
+                alert("error", data.message)
+            }else{
+                 //aaqui va el codigo
+                console.log( data  ) 
+                console.log( data[0].Correo  ) 
+                console.log( data[0].Role  ) 
+            }
+           
+       
+        
+        
+        
+        })
+
+        
     })
