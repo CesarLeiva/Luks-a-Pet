@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,11 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="/css/card form.css">
     <link rel="stylesheet" href="/css/inputs y botones.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 </head>
+
 <body class="signup">
 
     <section>
@@ -22,24 +25,46 @@
                 <form name="registro1" class="registro1" action="/html/sign up 2.html" method="get">
                     <div class="inputs">
                         <div class="input">
+                            <label for="correo" class="form-label">Correo</label><br>
+                            <input type="email" class="form-control" id="correo" name="correo"
+                                placeholder="ejemplo@gmail.com" required>
+                        </div>
+                        <br>
+                        <div class="input">
+                            <label for="contraseña" class="form-label">Contraseña</label><br>
+                            <input type="password" class="form-control" id="contraseña" name="contraseña"
+                                placeholder="Contraseña" required>
+                        </div>
+                        <br>
+                        <div class="input">
+                            <label for="contraseña" class="form-label">Repita la contraseña</label><br>
+                            <input type="password" class="form-control" id="repetirContraseña" name="repetirContraseña"
+                                placeholder="Contraseña" required>
+                        </div>
+                        <div class="input pt-3">
                             <label for="nombres" class="form-label">Nombres</label><br>
-                            <input type="text" class="form-control" id="nombre" name="nombres" placeholder="Nombres" required>
+                            <input type="text" class="form-control" id="nombre" name="nombres" placeholder="Nombres"
+                                required>
                         </div>
                         <br>
                         <div class="input">
                             <label for="apellidos" class="form-label">Apellidos</label><br>
-                            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                            <input type="text" class="form-control" id="apellidos" name="apellidos"
+                                placeholder="Apellidos" required>
                         </div>
                         <br>
                         <div class="input">
                             <label for="id" class="form-label">Número de identificación</label><br>
-                            <input type="number" class="form-control" id="identificacion" name="identificacion" placeholder="Número de identificación" required>
+                            <input type="number" class="form-control" id="identificacion" name="identificacion"
+                                placeholder="Número de identificación" required>
                         </div>
                         <br>
                         <div class="input">
                             <label for="celular" class="form-label">Número de celular</label><br>
-                            <input type="tel" class="form-control" id="celular" name="celular" pattern="[3]{1}[0-9]{9}" placeholder="3123456789" required>
+                            <input type="tel" class="form-control" id="celular" name="celular" pattern="[3]{1}[0-9]{9}"
+                                placeholder="3123456789" required>
                         </div>
+
                     </div>
                     <br>
                     <button name="submit" type="submit" id="boton" class="btn btn-primary">Registrarse</button>
@@ -50,4 +75,5 @@
     </section>
     <script src="/scripts/registro1.js" type="text/JavaScript"></script>
 </body>
+
 </html>

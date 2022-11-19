@@ -4,21 +4,58 @@ document.querySelector('form')
         const data = Object.fromEntries(
             new FormData(e.target)
         )
-        if (data.esterilizado == undefined){
-            alert('Indique el sexo de la mascota')
+        if (data.esterilizado == undefined) {
+            alert('Indique si se encuentra esterilizado')
             e.preventDefault()
         }
-        hoy = new Date;
-        const propuesta = {
-            nombre: data.nombreMascota,
-            edad: data.edadMascota,
-            sexo: data.sexoMascota,
-            departamento: data.departamentoMascota,
-            ciudad: data.ciudadMascota,
-            esterilizado: data.esterilizado,
-            foto: data.fotoMascota,
-            descripcion: data.descripcionMascota,
-            fecha: hoy.toLocaleDateString(),
+        // hoy = new Date;
+        const user = JSON.parse(localStorage.getItem('user'));
+
+        if (!user) {
+            alert("Iniciar sesion");
+        } else {
+
+
+            let payload = {
+                idUsuario: user.id,
+                nombre: data.nombreMascota,
+                edad: data.edadMascota,
+                sexo: data.sexoMascota,
+                departamento: data.departamentoMascota,
+                ciudad: data.ciudadMascota,
+                esterilizado: data.esterilizado,
+                descripcion: data.descripcionMascota,
+                // foto: data.fotoMascota,
+                // fecha: hoy.toLocaleDateString(),
+            }
+            console.log(payload)
+
+
+            fetch("http://localhost:3001/propuesta",
+                {
+                    method: "POST",
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                })
+                .then(function (res) { return res.json(); })
+                .then(function (data) {
+                    console.log(data);
+                    if (data.message) {
+                        alert("error", data.message)
+                    } else {
+                        alert("Se Ha guardado la propuesta");
+                        setTimeout(function () { window.location.href = "/html/feed.html"; }, 1000);
+
+
+
+                    }
+
+
+
+
+
+                })
+
         }
-        console.log(propuesta)
+
     })

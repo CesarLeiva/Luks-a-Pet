@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,12 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="/css/añadir PA.css">
     <link rel="stylesheet" href="/css/sidebar.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    
+
 </head>
+
 <body>
     <div class="sidebar">
         <header>
@@ -27,8 +30,8 @@
         <footer>
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a href="/html/index.html" id="boton-gris" class="nav-link active">
-                        Cerrar sesión
+                    <a href="javascript:history.back(-1);" id="boton-gris" class="nav-link active">
+                        Atras
                     </a>
                 </li>
                 <br>
@@ -47,20 +50,22 @@
                 <h1>LUKS A PET</h1>
             </div>
         </header>
-        
+
         <footer>
             <div class="formulario">
-                
+
                 <form name="añadirPA" class="añadirPA" action="#" method="get">
                     <div class="inputs m-4">
                         <section class="d-flex">
-                            <div class="input" >
+                            <div class="input">
                                 <label for="nombreMascota" class="form-label">Nombre de la mascota</label><br>
-                                <input type="text" class="form-control input" id="nombreMascota" name="nombreMascota" placeholder="Nombre de la mascota"  required>
+                                <input type="text" class="form-control input" id="nombreMascota" name="nombreMascota"
+                                    placeholder="Nombre de la mascota" required>
                             </div>
                             <div class="input mx-1">
                                 <label for="edadMascota" class="form-label">Edad de la mascota</label><br>
-                                <input type="text" class="form-control input" id="edadMascota" name="edadMascota" placeholder="Edad de la mascota" required>
+                                <input type="text" class="form-control input" id="edadMascota" name="edadMascota"
+                                    placeholder="Edad de la mascota" required>
                             </div>
                             <div class="input">
                                 <label for="sexo" class="form-label">¿Qué es?</label>
@@ -72,9 +77,9 @@
                         </section>
                         <br>
                         <div class="d-flex">
-                            
+
                         </div>
-                        
+
                         <br>
                         <div class="sitio d-flex">
                             <!-- <div class="select">
@@ -84,13 +89,15 @@
                             </div> -->
                             <div class="select">
                                 <label for="departamentoMascota" class="form-label">Departamento</label><br>
-                                <input type="text" class="form-control input" name="departamentoMascota" id="departamentoMascota" placeholder="Departamento" required>
+                                <input type="text" class="form-control input" name="departamentoMascota"
+                                    id="departamentoMascota" placeholder="Departamento" required>
                             </div>
                             <div class="select mx-2">
                                 <label for="ciudadMascota" class="form-label">Ciudad</label><br>
-                                <input type="text" class="form-control input" name="ciudadMascota" id="ciudadMascota" placeholder="Ciudad" required>
+                                <input type="text" class="form-control input" name="ciudadMascota" id="ciudadMascota"
+                                    placeholder="Ciudad" required>
                             </div>
-                            <div class="radio mx-1" >
+                            <div class="radio mx-1">
                                 <label for="nombreMascota" class="form-label">¿Está esterilizado?</label><br>
                                 <div id="opcionesRadio" class=" mx-2 my-2">
                                     <input type="radio" value="si" id="siEsterilizado" name="esterilizado">
@@ -103,12 +110,14 @@
                         <br>
                         <div class="foto">
                             <label for="fotoMascota" class="form-label">Seleccione una foto de la mascota</label><br>
-                            <input type="file" class="form-control input"  id="fotoMascota" name="fotoMascota" accept="image/png, image/jpeg" required>
+                            <input type="file" class="form-control input" id="fotoMascota" name="fotoMascota"
+                                accept="image/png, image/jpeg" required>
                         </div>
                         <br>
                         <div class="input descripcion">
                             <label for="descripcionMascota" class="form-label">Describe su personalidad</label>
-                            <textarea class="form-control  input" name="descripcionMascota" id="descripcionMascota" cols="30" rows="10" placeholder="Escribe aquí" required></textarea>
+                            <textarea class="form-control  input" name="descripcionMascota" id="descripcionMascota"
+                                cols="30" rows="10" placeholder="Escribe aquí" required></textarea>
                         </div>
                     </div>
                     <div class="botones m-4">
@@ -121,4 +130,5 @@
     </div>
     <script src="/scripts/añadir PA.js" type="text/JavaScript"></script>
 </body>
+
 </html>

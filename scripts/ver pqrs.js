@@ -1,30 +1,36 @@
-const pqrs1 = {
-    nombre: 'César',
-    mensaje: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda labore provident consequuntur corporis ipsam obcaecati maiores, tempora expedita, culpa, corrupti commodi qui dicta. Architecto modi ipsa amet, quibusdam iure quo.'
-}
+fetch("http://localhost:3001/pqrs",
+    {
+        method: "GET",
+        headers: { 'Content-Type': 'application/json' },
+    })
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+        console.log(data);
+        if (data.message) {
 
-const pqrs2 = {
-    nombre: 'Luis',
-    mensaje: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda labore provident consequuntur corporis ipsam obcaecati maiores, tempora expedita, culpa, corrupti commodi qui dicta. Architecto modi ipsa amet, quibusdam iure quo.'
-}
+            document.getElementById("card").innerHTML +=
+                `<h4>No hay PQRS</h4>`
+            alert(data.message)
 
-const pqrs3 = {
-    nombre: 'Daniel',
-    mensaje: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda labore provident consequuntur corporis ipsam obcaecati maiores, tempora expedita, culpa, corrupti commodi qui dicta. Architecto modi ipsa amet, quibusdam iure quo.'
-}
+        } else {
+            const pqrs = data;
+
+            for (i = 0; i <= pqrs.length; i++) {
+                document.getElementById("card").innerHTML +=
+                    `<div class="containt">
+                        <div class="pa mx-3">
+                            <section>
+                                <h1 class="m-4">`+ pqrs[i].Nombres + `:</h1>
+                                <h4 class="m-4">`+ pqrs[i].Mensaje + `</h4>
+                            </section><br>
+                        </div>
+                    </div>`
+                console.log(pqrs[i])
+            }
+
+        }
+    }
+    );
 
 
-const pqrs = [pqrs1, pqrs2, pqrs3];
 
-for(i=0; i<=pqrs.length; i++){
-    document.getElementById("card").innerHTML +=
-        `<div class="containt">
-            <div class="pa mx-3">
-                <section>
-                    <h1 class="m-4">`+pqrs[i].nombre+`:</h1>
-                    <h4 class="m-4">`+pqrs[i].mensaje+`</h4>
-                </section><br>
-            </div>
-        </div>`
-        console.log(pqrs[i])
-}
