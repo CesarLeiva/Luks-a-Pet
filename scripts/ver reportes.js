@@ -27,11 +27,11 @@ fetch("https://backend-luks-a-pet-production.up.railway.app/admin/reportes",
                     <div class="containt m-2" style="font-size: 190%; width: 100%;">
                         <h1 style="font-size: 200%; text-align: center;">`+ reportes[i].nombre + `</h1>
                         <div class="informaion mt-4 mx-5">
-                            Adoptante: `+ reportes[i].adoptante + `
+                            Adoptante: `+ reportes[i].Nombre + `
                             <br>
-                            Cédula: `+ reportes[i].identificacion + `
+                            Cédula: `+ reportes[i].IdAdoptante + `
                             <br>
-                            No. teléfono: `+ reportes[i].celular + `
+                            No. teléfono: `+ reportes[i].Celular + `
                             </div>
                         </div>
                 </section>
