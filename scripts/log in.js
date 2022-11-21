@@ -16,7 +16,7 @@ document.querySelector('.login')
             contra: form.contraseña
         }
 
-        fetch("http://localhost:3001/login",
+        fetch("https://backend-luks-a-pet-production.up.railway.app/login",
             {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },

@@ -31,7 +31,7 @@ document.querySelector('form')
             console.log(payload)
 
 
-            fetch("http://localhost:3001/propuesta",
+            fetch("https://backend-luks-a-pet-production.up.railway.app/propuesta",
                 {
                     method: "POST",
                     headers: { 'Content-Type': 'application/json' },

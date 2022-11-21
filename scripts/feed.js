@@ -1,5 +1,5 @@
 
-fetch("http://localhost:3001/propuestas",
+fetch("https://backend-luks-a-pet-production.up.railway.app/propuestas",
     {
         method: "GET",
         headers: { 'Content-Type': 'application/json' },

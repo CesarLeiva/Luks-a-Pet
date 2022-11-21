@@ -18,7 +18,7 @@ document.querySelector('.registro1')
             }
             console.log(payload)
 
-            fetch("http://localhost:3001/registrar",
+            fetch("https://backend-luks-a-pet-production.up.railway.app/registrar",
                 {
                     method: "POST",
                     headers: { 'Content-Type': 'application/json' },

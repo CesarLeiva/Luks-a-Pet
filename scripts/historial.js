@@ -30,7 +30,7 @@ const user = JSON.parse(localStorage.getItem('user'));
 if (!user) {
     alert("Iniciar sesion");
 } else {
-    const url = `http://localhost:3001/propuestas/${user.id}`
+    const url = `https://backend-luks-a-pet-production.up.railway.app/propuestas/${user.id}`
 
     fetch(url,
         {
@@ -53,9 +53,10 @@ if (!user) {
 
                 for (i = 0; i <= propuestas.length; i++) {
 
+                    if (propuestas[i].Adoptado == false) {
 
-                    document.getElementById("card").innerHTML +=
-                        `<div class="containt">
+                        document.getElementById("card").innerHTML +=
+                            `<div class="containt">
         <div class="pa mx-3" style="background-color: #5F6C7B; border: 2px; margin-bottom: 20px; border-radius: 10px;">
             <section style="margin-top: 10px;">
                 <div class="fotoMascota m-2" style="height: 200px; width: auto;">
@@ -70,7 +71,7 @@ if (!user) {
                         </button>
                         </div>
                     <div style="text-align: center; font-size: 18px;">
-                        <a href="/html/log in.html" style="text-decoration: none; color: white;">
+                        <a href= "/html/reporte adopcion.html?id=`+ propuestas[i].IdPropuesta + `" style="text-decoration: none; color: white;">
                             Fue adoptado?
                             <span style="color: #FF8298;">Repórtalo aquí</span>
                         </a>
@@ -79,7 +80,28 @@ if (!user) {
             </section>
         </div>
     </div>`
+
+
+                    } else {
+
+                        document.getElementById("card").innerHTML +=
+                            `<div class="containt">
+        <div class="pa mx-3" style="background-color: #5F6C7B; border: 2px; margin-bottom: 20px; border-radius: 10px;">
+            <section style="margin-top: 10px;">
+                <div class="fotoMascota m-2" style="height: 200px; width: auto;">
+                    <img src=`+ propuestas[i].Foto + ` alt="nombre" style="border-radius: 15px; height: inherit; width: inherit;">
+                </div>
+                    <div class="containt m-2" style="font-size: 190%; width: 100%;">
+                    <h6 style="font-size: 160%; text-align: center;">`+ propuestas[i].Nombre + ` ya fue adoptado</h6>
+           
+                </div>
+            </section>
+        </div>
+    </div>`
+                    }
                 }
+
+
 
 
 

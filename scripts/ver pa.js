@@ -7,7 +7,7 @@ const urlParams = new URLSearchParams(valores);
 var id = urlParams.get('id');
 
 console.log(id)
-fetch(`http://localhost:3001/propuesta/${id}`,
+fetch(`https://backend-luks-a-pet-production.up.railway.app/propuesta/${id}`,
     {
         method: "GET",
         headers: { 'Content-Type': 'application/json' },
