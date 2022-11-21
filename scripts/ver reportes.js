@@ -1,6 +1,6 @@
 
 
-fetch("https://backend-luks-a-pet-production.up.railway.app/reportes",
+fetch("https://backend-luks-a-pet-production.up.railway.app/admin/reportes",
     {
         method: "GET",
         headers: { 'Content-Type': 'application/json' },
