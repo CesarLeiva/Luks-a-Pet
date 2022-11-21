@@ -25,7 +25,7 @@ fetch("https://backend-luks-a-pet-production.up.railway.app/admin/reportes",
                         <img src=`+ reportes[i].Foto + `  alt="nombre" style="border-radius: 15px; height: inherit; width: inherit;">
                     </div>
                     <div class="containt m-2" style="font-size: 190%; width: 100%;">
-                        <h1 style="font-size: 200%; text-align: center;">`+ reportes[i].nombre + `</h1>
+                        <h1 style="font-size: 200%; text-align: center;">`+ reportes[i].mascota_nombre + `</h1>
                         <div class="informaion mt-4 mx-5">
                             Adoptante: `+ reportes[i].Nombre + `
                             <br>
